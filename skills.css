@@ -1,0 +1,202 @@
+.skills {
+    width: 100%;
+    margin: auto auto;
+    position: relative;
+    float: left;
+    font-size: 12px;
+    line-height: 2em;
+    padding: 30px 0 30px;
+}
+
+.col {
+	margin: auto auto;
+    width: 80%;
+	position: relative;
+}
+
+#skill {
+    list-style: none;
+    padding-top: 30px;
+}
+
+#skill li {
+    margin-bottom: 70px;
+    background: #000;
+    height: 5px;
+    border-radius: 3px;
+    border-left: 1px solid #111;
+    border-top: 1px solid #111;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+#skill li em {
+    position: relative;
+    top: -30px;
+}
+
+.expand {
+    height: 2px;
+    margin: 1px 0px;
+    background: #2187e7;
+    position: absolute;
+    box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.4);
+}
+
+.leadership {
+    width: 80%;
+    -moz-animation: leadership 2s ease-out;
+    -webkit-animation: leadership 2s ease-out;
+}
+
+.mentoring {
+    width: 90%;
+    -moz-animation: mentoring 2s ease-out;
+    -webkit-animation: mentoring 2s ease-out;
+}
+
+.communication {
+    width: 90%;
+    -moz-animation: communication 2s ease-out;
+    -webkit-animation: communication 2s ease-out;
+}
+
+.emotional {
+    width: 80%;
+    -moz-animation: emotional 2s ease-out;
+    -webkit-animation: emotional 2s ease-out;
+}
+
+.innovation {
+    width: 70%;
+    -moz-animation: innovation 2s ease-out;
+    -webkit-animation: innovation 2s ease-out;
+}
+
+.efficiency {
+    width: 95%;
+    -moz-animation: efficiency 2s ease-out;
+    -webkit-animation: efficiency 2s ease-out;
+}
+
+.skillOnScroll{
+@-moz-keyframes leadership {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    };
+}
+
+@-moz-keyframes mentoring {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    };
+}
+
+@-moz-keyframes communication {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    };
+}
+
+@-moz-keyframes emotional {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    };
+}
+
+@-moz-keyframes innovation {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    };
+}
+
+@-moz-keyframes efficiency {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 95%;
+    };
+}
+
+@-webkit-keyframes leadership {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    };
+}
+
+@-webkit-keyframes mentoring {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    };
+}
+
+@-webkit-keyframes communication {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    };
+}
+
+@-webkit-keyframes emotional {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    };
+}
+
+@-webkit-keyframes innovation {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    };
+}
+
+@-webkit-keyframes efficiency {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 95%;
+    };
+}
+}

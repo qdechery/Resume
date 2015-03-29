@@ -1,0 +1,24 @@
+.hidden {
+	display: none;
+}
+
+.shrink {
+    -webkit-transform: scale(0.01,0.01);
+	-moz-transform: scale(0.01,0.01);
+	-ms-transform: scale(0.01,0.01);
+	-o-transform: scale(0.01,0.01);
+	transform: scale(0.01,0.01);
+}
+.grow {
+    -webkit-transform: scale(1,1);
+	-moz-transform: scale(1,1);
+	-ms-transform: scale(1,1);
+	-o-transform: scale(1,1);
+	transform: scale(1,1);
+}
+.leftHide {
+	margin-right: 1000px;
+}
+.leftUnhide {
+	left: 50%;
+]
