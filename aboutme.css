@@ -1,0 +1,114 @@
+body #aboutme {
+	margin: 50px auto;
+	height: auto;
+	width: 100%;
+	position: relative;
+	display: block;
+}
+body #aboutme h3,#work h3 {
+	text-align: center;
+	color: royalblue;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: 'Open Sans';
+
+}
+
+body #aboutme .myface {
+	background: url("assets/myface.jpg");
+	border-radius: 50%;
+	background-size: contain;
+	height: 200px;
+	width: 200px;
+	margin: 50px auto 20px;
+	position: relative;
+}
+
+body #aboutme p {
+	text-align: center;
+	margin: auto;
+	max-width: 90%;
+	font-family: 'Open Sans';
+	color: black;
+	font-size: 26px;
+	padding: 0% 22%;
+	position: relative;
+}
+
+body #aboutme ul li {
+	font-size: 18px;
+	font-family: 'Open Sans';
+}
+
+body #aboutme .column1 {
+	display: inline-block;
+	position: relative;
+	width: 25%;
+	margin: 0% 8% 0px 15%;
+}
+body #aboutme .column2 {
+	display: inline-block;
+	position: relative;
+	width: 25%;
+	margin: 0% 0px 0px 0%;
+}
+
+body #aboutme .skills {
+	position: relative;
+}
+	/*Media Queries*/
+@media screen and (max-width: 1080px) {
+	body #aboutme .column1 {
+		width: 30%;
+	}
+	body #aboutme .column2 {
+		width: 30%;
+	}
+	body #aboutme .column1 {
+		margin: 0% 8% 0px 5%;
+	}
+}
+
+@media screen and (max-width: 880px) {
+	body #aboutme ul li {
+		font-size: 14px;
+	}
+
+
+@media screen and (max-width: 710px) {
+	body #aboutme ul li {
+		font-size: 12px;
+	}
+	body #aboutme {
+		margin: 50px auto 100px; 
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body #aboutme p {
+		font-size: 20px;
+		padding: 10px 10% 5% 10%;
+	}
+	body #aboutme .skills {
+		max-width: 100%;
+	}
+	body #skill {
+		padding-left: 0%;
+	}
+	body #aboutme .col {
+		max-width: 100%;
+	}
+	body #aboutme .column1 {
+		display: block;
+		margin: 0px 0px 0px 13%;
+		width: 60%
+	}
+	body #aboutme .column2 {
+		display: block;
+		margin: 0px 0px 0px 13%;
+		width: 60%
+	}
+	body #aboutme ul li {
+		font-weight: bold;
+	}
+}

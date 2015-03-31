@@ -5,12 +5,13 @@ $( document	).ready(function() {
 		windowScrollPosTop = $(window).scrollTop(),
 		windowScrollPosBottom = windowHeight + windowScrollPosTop;
 	
+	$(".home").addClass("hidden");
+	
 	//On Document Ready Functions
 	menuToggle();
 	smoothScroll(1000);
 	revealOnScroll();
 	growOnScroll();
-	skillOnScroll();
 
 }); //END DOCUMENT READY FN
 
@@ -48,12 +49,17 @@ function revealOnScroll() {
 				if (direction == "right") {
 					$(this).css({
 						"opacity" : 0,
-						"right" : "700px"
+						"right" : "600px"
+					});
+				} else if (direction == "top"){
+					$(this).css({
+						"opacity" : 0,
+						"top" : "-200px"
 					});
 				} else {
 					$(this).css({
 						"opacity" : 0,
-						"right" : "-700px"
+						"right" : "-600px"
 					});
 				}
 				$(this).addClass("hide");
@@ -61,7 +67,7 @@ function revealOnScroll() {
 		
 			if (!$(this).hasClass("animation-complete")) {
 				if (windowScrollPosBottom > objectOffsetTop) {
-					$(this).animate({"opacity" : 1, "right" : 0}, 1000).addClass("animation-complete");
+					$(this).animate({"opacity" : 1, "right" : 0, "top" : 0}, 1000).addClass("animation-complete");
 				}
 			}
 		});
@@ -88,25 +94,7 @@ function growOnScroll() {
 	}
 } // end growOnScroll function here
 
-//skillOnScroll
-function skillOnScroll() {
 
-	$.fn.skillOnScroll = function() {
-		return this.each(function() {
-			var objectOffset = $(this).offset(),
-			objectOffsetTop = objectOffset.top;
-			if (!$(this).hasClass("hide")) {
-				$(this).addClass("shrink").addClass("hide");
-			}
-			if (!$(this).hasClass("animation-complete")) {
-				if (windowScrollPosBottom > objectOffsetTop) {
-					$(this).css("transition", "all .5s ease-in-out");
-					$(this).addClass("grow").addClass("animation-complete");
-				}
-			}
-		});
-	}
-} // end skillOnScroll function here
 
 	$(window).scroll(function(){
 		windowHeight = $(window).height(),
@@ -121,13 +109,16 @@ function skillOnScroll() {
 		} else {
 			$(".home").addClass("hidden");
 			}
-
-		$(".myface").growOnScroll(); 
-		$("#aboutme p").revealOnScroll("right");
-		$(".skills").skillOnScroll("right");
 		
-
-	
+		
+		$(".myface").growOnScroll(); 
+		$("#aboutme p").revealOnScroll("top");
+		$(".column2").revealOnScroll("right");
+		$(".column1").revealOnScroll("left");
+		$("#work h4").growOnScroll();
+		$(".flex-one").revealOnScroll("right");
+		$(".flex-two").revealOnScroll("left");
+		
 	});
 	
 

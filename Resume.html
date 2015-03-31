@@ -3,31 +3,43 @@
 		<head>
 			<meta charset="UTF-8">
 			<meta name="apple-mobile-web-app-capable" content="yes">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta name="viewport" content="width=device-width, initial-scale=1">			
 			<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 			<link href='http://fonts.googleapis.com/css?family=Fira+Mono' rel='stylesheet' type='text/css'>
 			
 			<!-- Include the jQuery library -->	
 			<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 			
+			<!-- Lightbox 2 -->
+			<script src="scripts/lightbox.min.js"></script>
+			
 			<!--SEO -->
 			<title>Quentin D&eacute;chery - Resume</title>
 			<meta name="description" content="Hi, I'm Quentin. Get to know me a little by browsing around my resume layout and give me a buzz if you've got a fun project in mind.">
 			<meta rel="author" href="https://plus.google.com/117777370378356685556/posts">
+			<link rel="shortcut icon" type="image/x-icon" href="assets/q.ico">
 		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 			
-			<link rel="stylesheet" type="text/css" href="header.css">		
-			<link rel="stylesheet" type="text/css" href="aboutme.css">
-			<link rel="stylesheet" type="text/css" href="animations.css">
-			<link rel="stylesheet" type="text/css" href="skills.css">
-			<script src="functions.js"></script>
+			<link rel="stylesheet" type="text/css" href="header.css"/>		
+			<link rel="stylesheet" type="text/css" href="aboutme.css"/>
+			<link rel="stylesheet" type="text/css" href="animations.css"/>
+			<link rel="stylesheet" type="text/css" href="tools/skills.css"/> <!-- Skill Bar Meter -->
+			<link rel="stylesheet" type="text/css" href="work.css"/>
+			<link rel="stylesheet" href="tools/lightbox.css"/>
+			<link rel="stylesheet" href="tools/screen.css"/>
+			<script src="scripts/functions.js"></script>
 		<head>
 		
 		<body>
-		<div class="status"></div>
 			<header>
 				<div id="top"></div>
-				<div class="menu">Menu</div>
+				<div class="menu">Menu
+					<div class="m-icon">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+				</div>
 				<nav>
 					<a href="#aboutme">About Me</a>
 					<a href="#work">Work</a>
@@ -64,10 +76,35 @@
 			</div>
 			
 			<div id="work">
-				<h3>Work</h3>
-				
+				<h3>Work & Accreditation</h3>
+					<div class="ofchery">
+						<h4 class="chery">Of Chery, Inc.</abbr></h4>
+							<div class="flex-one">
+								<a href="http://ottenbros.com/" target="_blank"><div class="square ottenbros"></div></a>
+								<a href="http://store.theherbalist.com/" target="_blank"><div class="square herbalist"></div></a>
+								<a href="https://6sense.com/" target="_blank"><div class="square sixsense"></div></a>
+							</div>
+					</div>
+
+					<div class="certification">
+						<h4 class="cert">Certificates</h4>
+							<div class="flex-two">
+								<a href="assets/analytics-full.png" data-title="http://goo.gl/E2vflv" data-lightbox="google"><div class="square analytics"></div></a>
+								<a href="assets/adwords-full.png" data-title="http://goo.gl/E2vflv" data-lightbox="google"><div class="square adwords"></div></a>
+								<a href="http://goo.gl/zNYhv4" target="_blank"><div class="square bing" target="_blank"></div></a>
+							</div>
+					</div>
 			</div>
 			
+			<div id="testimonials">
+
+				<h3>Testimonials</h3>
+					<div class="face-card"></div>
+					<div class="blurb"></div>
+					<div class=""></div>
+
+			</div>
+
 		</body>
 		
 	</html>
