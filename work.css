@@ -20,12 +20,7 @@ body #work .ofchery {
 	width: 100%;
 	height: auto;
 	margin: 5% 0%;
-	opacity: .8
 }
-body #work .ofchery:hover {
-	opacity: 1;
-}
-
 body #work .chery[title]:hover:after {
 	content: attr(title);
 	margin: 5px 30vw;
